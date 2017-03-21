@@ -35,13 +35,13 @@ function maxOfThree(a,b,c){
 function isVowel(char){
     //...
 
-    var vowel = ["a","e","i","o","u"]
+    var vowel = ["a","e","i","o","u", ",", " "]
     for(var i =0; i<vowel.length; i++)
     
     if (vowel[i] == char){
-    	return "True"
+    	return true
     }else{
-    	return "false"
+    	return false
     }
 }
 
@@ -52,19 +52,19 @@ function isVowel(char){
 function rovarspraket(phrase){
     //...
 
-var vowel = ["a","e","i","o","u"]
 newStr = ""
 
-for(var i=0; i<phrase.length; i++){
+for(var i=0; i < phrase.length; i++){
  
- if (phrase.charAt(i) == vowel){
-    	  newStr += phrase.charAt(i)
-    }else{
-    	  newStr += phrase.charAt(i) + "o" + phrase.charAt(i) 
+ if (isVowel(phrase[i])){
+    	  newStr += phrase[i];
+    } else{
+    	  newStr += phrase[i] + "o" + phrase[i]; 
     }
   }
   return newStr
 }
+  
   
 
 // ---------------------
@@ -75,8 +75,8 @@ function reverse(phrase){
     //...
     var string1 = phrase
     string1 = string1.split("")
-    string1 = string1.reverse()
+    string1 = string1.reverse().join()
 
-    return.log(string1)
+    return string1
 
 }

@@ -15,7 +15,7 @@ function add(a,b){
 // and returns the average of those 3 numbers.
 
 function avg(a,b,c){
-	return(a,b,c)
+	return(a+b+c)/3
 }
 
 
@@ -67,5 +67,5 @@ function greet(name){
 // sentence: "quick brown fox jumps over the fence"
 
 function madlib(a,b,c,d){
-	return "The " + a +" ran " + b + " from " + c + " big " + d
+	return "The " + a + " ran " + b + " from " + c + " big " + d
 }

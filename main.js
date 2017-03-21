@@ -15,8 +15,10 @@ function add(a,b){
 // and returns the average of those 3 numbers.
 
 function avg(a,b,c){
-	return(a,b,c)
+	return(a,b,c)/3
 }
+
+
 
 
 
